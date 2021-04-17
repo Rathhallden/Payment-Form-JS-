@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.img {
+    height: 130px;
+    width: 100%;
+}
+
+.img1 {
+    width: 100%;
+    background-image: url("../Image/maybank.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img2 {
+    width: 100%;
+    background-image: url("../Image/ppcbank.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img3 {
+    background-image: url("../Image/National_Bank_of_Canada_A_New_Branch_Experience_at_National_Bank.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#cashblock {
+    display: none;
+}
+
+p {
+    color: red;
+    font-size: 11px;
+    margin-bottom: 3px;
+}

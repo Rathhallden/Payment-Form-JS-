@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework006</title>
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.css" rel="stylesheet" />
+    <!-- link CSS -->
+    <link rel="stylesheet" href="./CSS/makeup.css">
+  
+</head>
+<body>
+    <!-- class container and set width 25 -->
+    <div class="container w-25 " id="alldata">
+        <!-- carousel -->
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="img img1"></div>
+                </div>
+                <div class="carousel-item">
+                    <div class="img img2"></div>
+                </div>
+                <div class="carousel-item">
+                    <div class="img img3"></div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!-- form payment -->
+        <form>
+            <h2 class="text-center mb-4 ">Payment</h2>
+            <!-- selcet option -->
+            <div class="input-group mb-3">
+                <select class="form-select" id="item">
+                    <option selected>Coca</option>
+                    <option select>Pepsi</option>
+                    <option select>Fanta</option>
+                    <option select>Coffee</option>
+                </select>
+            </div>
+            <!-- UnitPrice -->
+            <p id="eruprice"></p>
+            <div class="form-outline mb-3">
+                <input type="text" id="uprice" class="form-control" />
+                <label class="form-label" for="uprice">UnitPrice</label>
+            </div>
+            <!-- Quantity -->
+            <p id="erqty"></p>
+            <div class="form-outline mb-3">
+                <input type="text" id="qty" class="form-control" />
+                <label class="form-label" for="qty">Quantity</label>
+            </div>
+
+            <!-- Discount -->
+            <p id="erdiscount"></p>
+            <div class="form-outline mb-3">
+                <input type="text" id="discount" class="form-control" />
+                <label class="form-label" for="discount">Discount</label>
+            </div>
+
+            <!-- total field -->
+            <div class="form-outline mb-3">
+                <input type="text" id="total" placeholder="Total $" class="form-control" disabled />
+            </div>
+
+            <!-- radius button -->
+            <div class="row ms-5 mb-3">
+                <div class="col-lg-6 col-md-6 col-sm-6 ">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="hide" checked>
+                        <label class="form-check-label" for="hide">
+                            cash
+                        </label>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 ">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="show">
+                        <label class="form-check-label" for="show">
+                            cash
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- cash number -->
+            <div class="container" id="cashblock">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <div class="form-outline mb-3">
+                            <input type="text" id="form1Example1" class="form-control" />
+                            <label class="form-label" for="form1Example1">Card Number</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="form-outline mb-3">
+                            <input type="text" id="form1Example1" class="form-control" />
+                            <label class="form-label" for="form1Example1"
+                                style="font-size: 12px; margin-top:2px;">MONTH</label>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="form-outline mb-3">
+                            <input type="text" id="form1Example1" class="form-control" />
+                            <label class="form-label" for="form1Example1"
+                                style="font-size: 12px; margin-top:2px;">YEAR</label>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="form-outline mb-3">
+                            <input type="text" id="form1Example1" class="form-control" />
+                            <label class="form-label" for="form1Example1"
+                                style="font-size: 12px; margin-top:2px;">CVV</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- button -->
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <button type="button" id="pay" class="btn btn-primary btn-block">Pay</button>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <button type="reset" class="btn btn-warning btn-block">Clear History</button>
+                </div>
+
+            </div>
+
+            <!-- textarea -->
+            <div class="form-outline my-3">
+                <textarea class="form-control" readonly id="history" placeholder="History" rows="4"></textarea>
+                <!-- <label class="form-label" for="textAreaExample">History</label> -->
+            </div>
+        </form>
+    </div>
+    <script src="./JS/myjs.js"></script>
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
